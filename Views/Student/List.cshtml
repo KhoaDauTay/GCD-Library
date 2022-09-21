@@ -1,0 +1,15 @@
+@model MvcMovie.Models.Student[]
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Dashboard";
+}
+
+@foreach (Student item in @Model)
+{
+    <div class="text-center">
+        <h1 class="display-4">@item.Name</h1>
+        <h1 class="display-4">@item.Age</h1>
+        <h1 class="display-4">@item.Address</h1>
+    </div>   
+}
